@@ -1,0 +1,39 @@
+/**
+
+ * 
+ */
+package teat;
+
+
+import java.util.*;
+public class Just_test {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner in = new Scanner(System.in);
+      int n ,k ,t ,d,two_lo=0 ;
+      double frist_loven;
+      
+      n=in.nextInt();
+      t=in.nextInt();
+      k=in.nextInt();
+      d=in.nextInt();
+      frist_loven= Math.ceil( n / (1.0d * k)) * t;
+      two_lo=t+d;
+      if(frist_loven<=two_lo)
+      {
+    	  System.out.print("No");
+      }
+      else     	  System.out.print("Yes");
+
+
+      
+     
+    
+    
+    }
+         }
+
+ 

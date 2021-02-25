@@ -1,0 +1,79 @@
+/**
+
+ * 
+ */
+package teat;
+
+
+import java.util.*;
+public class Just_test {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner in = new Scanner(System.in);
+        
+        String pet[] = {"Frid" ,"zuze" ,"Bin"};
+        int len =pet.length;
+        int rand1=(int)(Math.random()*len);
+        System.out.print(rand1);
+        
+        
+        
+        //code 1
+//        String[] wordListOne = {"24/7" ,"multi-	Tiar",
+//        		"30,OOO foot", "B-to-B" , "win-win" , "front-end" ,
+//        		"web- based" , "pervasive", "smart", "six-sigma",
+//        		" cri tical -path" , "dynamic"} ;
+//        	String[] wordListTwo = { "empowered", "sticky",
+//        	"value-added.", "oriented", "centric", "distributed",
+//        	"clustered", "branded", "outaide-the-box", "positioned",
+//        	"networked", " f ocused" , "leveraged", "aligned",
+//        	"targeted", "shared" , "cooperative", "accelerated"};
+//        	String[] wordListThree = {"process", "tipping-point",
+//        			"solution", "architecture", "core competency" ,
+//        			"strategy", "mindshare", "portal" , "apace" , "vision",
+//        			"adigm", "ssion"};
+//        	// find out !low many word. aN In ...d11bt
+//        	int oneLenqth = wordListOne . length;
+//        	int twoLength = wordListTwo .length;
+//        	int threeLength=wordListThree.length;        	
+//        	//random 
+//        	int r1= (int)(Math.random()*oneLenqth);
+//        	int r2= (int)(Math.random()*twoLength);
+//        	int r3= (int)(Math.random()*threeLength);
+//        	// now build a pllrue
+//        	String phrase  = wordListOne[r1] + " " +
+//        	wordListTwo[r2] + " " + wordListThree[r3] ;
+//        	// print oat the phra..
+//        	System.out.println("What we need is a " + phrase);
+
+        	
+        	
+        	
+        	
+/*     int n ,k ,t ,d,two_lo=0 ;
+//      double frist_loven;
+//      
+//      n=in.nextInt();
+//      t=in.nextInt();
+//      k=in.nextInt();
+//      d=in.nextInt();
+//      frist_loven= Math.ceil( n / (1.0d * k)) * t;
+//      two_lo=t+d;
+//      if(frist_loven<=two_lo)
+//      {
+//    	  System.out.print("No");
+//      }
+//      else     	  System.out.print("Yes");
+//
+//
+//      
+*/     
+    
+    
+    }
+         }
+
+ 

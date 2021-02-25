@@ -1,0 +1,59 @@
+/**
+
+ * 
+ */
+package teat;
+
+/**
+ * @author mohamed
+ *
+ */
+import java.util.*;
+public class Just_test {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner in = new Scanner(System.in);
+       int n , c=0 ;
+       n=in.nextInt();
+       String st;
+       st=in.next();
+      char str[]=st.toCharArray();
+          
+       for(int i=0;i<=str.length-1;i++)
+       {
+    	   
+    	   for(int j=i+1;j<=str.length-1;j++)
+    	   {
+    		   int d=0;
+    		   
+    	   if(str[i]==str[j])
+    	   {
+    		   d++;
+    		   c++;
+    		   
+    	   }
+    	   if(d>2)
+    	   {
+    		   i=i+d;//this to not repeat count the same char 
+    	   }
+    	   else
+    		   {
+    		   break;}
+    	   }
+    	  
+    	  
+    	  
+       }
+       if(c>=n)
+	   {
+		   c=n-1;
+	   }
+       System.out.print(c);
+     }
+      
+      
+    }
+

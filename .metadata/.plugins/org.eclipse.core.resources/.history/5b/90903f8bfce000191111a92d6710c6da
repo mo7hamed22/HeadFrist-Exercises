@@ -1,0 +1,59 @@
+/**
+
+ * 
+ */
+package teat;
+
+/**
+ * @author mohamed
+ *
+ */
+import java.util.*;
+public class Just_test {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner in = new Scanner(System.in);
+       int n ,s=0 ,v=0 ;
+       n=in.nextInt();
+      int arr[]=new int[n];
+      for(int i=0 ; i<arr.length ;i++)
+      {
+    	  arr[i]=in.nextInt();
+      }
+      int i=0  , j=n-1 ;
+      boolean p =true;//falg for turns
+     while(i<=j)
+     {
+    	 if(arr[i]>=arr[j])// >(=)is improtant
+    	 {
+    		 if(p)
+    		 s+=arr[i];
+    		 else
+    		 { v+=arr[i];}
+    		i++; 
+    	 }
+    
+    	 
+    	 if(arr[i]<arr[j])
+    	 {
+    		 if(p)
+        		 s+=arr[j];
+        		 else
+        		 {v+=arr[j];}
+    	j--;	 
+    	 }
+    	 if(p)
+    	  p=false;
+    	 	else p=true;
+     }
+    	 
+    	 System.out.print(s+" "+v);
+
+     }
+      
+      
+    }
+

@@ -1,0 +1,38 @@
+/**
+
+ * 
+ */
+package teat;
+import java.*;
+import java.util.Scanner;
+
+public class Just_test {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner in = new Scanner(System.in);
+        String st=in.next();
+       
+       char x= 'a';
+       int c=0;
+       for (int i = 0; i <st.length() ; i++) {
+    	   if(Math.abs(st.charAt(i)-x)>13)
+    	   {
+    		   c+=Math.abs(st.charAt(i)-'z');
+    	   }
+    	   else {
+			c+=Math.abs(st.charAt(i)-x);
+		}
+    	   x=st.charAt(i);
+		
+	}
+       
+       System.out.print(c);
+       
+       
+  
+    }
+         }
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;frist_gui.Border_Layout.java&apos; to &apos;Button1.java&apos;&#x0A;- Original project: &apos;GuI_in_java&apos;&#x0A;- Original element: &apos;frist_gui.Border_Layout.java&apos;&#x0A;- Renamed element: &apos;frist_gui.Button1.java&apos;" description="Rename compilation unit &apos;Border_Layout.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;frist_gui{Border_Layout.java" name="Button1.java" references="false" stamp="1600151726990" version="1.0"/>
+</session>

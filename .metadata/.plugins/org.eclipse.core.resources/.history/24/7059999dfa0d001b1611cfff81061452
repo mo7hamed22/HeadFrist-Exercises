@@ -1,0 +1,31 @@
+package _Develop_To_Return_object;
+
+public class Song {
+	String title ,artist ,rating ,bpm ;
+	Song(String t ,String a ,String r , String b )
+	{
+		title=t ;
+		artist=a ;
+		rating = r ; 
+		bpm = b ;
+		
+	}
+	public String getArtist() {
+		return artist;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public String getBpm() {
+		return bpm;
+	} 
+	public String getRating() {
+		return rating;
+	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+		//return getTitle();
+	}
+}

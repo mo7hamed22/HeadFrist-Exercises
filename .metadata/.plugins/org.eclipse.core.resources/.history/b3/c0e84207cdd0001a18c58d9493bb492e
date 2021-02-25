@@ -1,0 +1,261 @@
+/**
+
+ * 
+ */
+package teat;
+
+
+import java.util.*;
+import java.io.* ;
+
+
+
+
+public class Just_test {
+	
+	int c =0 ;
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+       // Scanner in = new Scanner(System.in);
+        //Real Guess Game
+        int GuessNum =0 ;
+       GameHelper helper = new GameHelper ();
+        SimpleDotCom theDotCom = new SimpleDotCom();
+        int randomNum = (int)(Math.random() * 4);
+        int []locations= {randomNum ,randomNum+1 ,randomNum+2};
+        theDotCom.setLocationCells(locations);
+        boolean isAliva = true;
+        while (isAliva==true) {
+			String guess =helper.getOserlnput("Enter Number");
+			String result = theDotCom.checkYourself(guess);
+			GuessNum++;
+			if(result.equals("kill"))
+			{
+				isAliva=false;
+				System.out.print("You Took" +GuessNum + "guesses");
+			}
+			
+		}
+        
+        
+        
+        
+        //code 4 
+//        Just_test t1 ,t2 ;
+//        t1=new Just_test();
+//        t1.c++;
+//        t2=new Just_test();
+//        t2.c++;
+//        System.out.print(t1.c +" "+ t2.c);
+        
+        
+        //Guess Game
+//        GuessGame game = new GuessGame();
+//        game.startGame();
+        
+        
+        //code 3 
+//        Dog dog1 =new Dog();
+//        dog1.name="harrry";
+//        dog1.size=88;
+//        dog1.breed="dog";
+//        dog1.bark();
+        //code 2
+  
+//        String pet[] = {"Frid" ,"zuze" ,"Bin"};
+//        int len =pet.length;
+//        int rand1=(int)(Math.random()*len);
+//        System.out.print(rand1);
+//        
+        
+        
+        //code 1
+//        String[] wordListOne = {"24/7" ,"multi-	Tiar",
+//        		"30,OOO foot", "B-to-B" , "win-win" , "front-end" ,
+//        		"web- based" , "pervasive", "smart", "six-sigma",
+//        		" cri tical -path" , "dynamic"} ;
+//        	String[] wordListTwo = { "empowered", "sticky",
+//        	"value-added.", "oriented", "centric", "distributed",
+//        	"clustered", "branded", "outaide-the-box", "positioned",
+//        	"networked", " f ocused" , "leveraged", "aligned",
+//        	"targeted", "shared" , "cooperative", "accelerated"};
+//        	String[] wordListThree = {"process", "tipping-point",
+//        			"solution", "architecture", "core competency" ,
+//        			"strategy", "mindshare", "portal" , "apace" , "vision",
+//        			"adigm", "ssion"};
+//        	// find out !low many word. aN In ...d11bt
+//        	int oneLenqth = wordListOne . length;
+//        	int twoLength = wordListTwo .length;
+//        	int threeLength=wordListThree.length;        	
+//        	//random 
+//        	int r1= (int)(Math.random()*oneLenqth);
+//        	int r2= (int)(Math.random()*twoLength);
+//        	int r3= (int)(Math.random()*threeLength);
+//        	// now build a pllrue
+//        	String phrase  = wordListOne[r1] + " " +
+//        	wordListTwo[r2] + " " + wordListThree[r3] ;
+//        	// print oat the phra..
+//        	System.out.println("What we need is a " + phrase);
+
+        	
+        	
+        	
+        	
+/*     int n ,k ,t ,d,two_lo=0 ;
+//      double frist_loven;
+//      
+//      n=in.nextInt();
+//      t=in.nextInt();
+//      k=in.nextInt();
+//      d=in.nextInt();
+//      frist_loven= Math.ceil( n / (1.0d * k)) * t;
+//      two_lo=t+d;
+//      if(frist_loven<=two_lo)
+//      {
+//    	  System.out.print("No");
+//      }
+//      else     	  System.out.print("Yes");
+//
+//
+//      
+*/     
+        
+        
+ 
+    
+    
+    }
+         }
+ class GameHelper {
+public String getOserlnput(String prompt)
+{
+String inputLine= null;
+System.out.print(prompt +"");
+try {
+	BufferedReader is=new BufferedReader( new InputStreamReader(System.in));
+	inputLine = is.readLine();
+	if (inputLine. length () == 0)
+	return null;
+	} catch (IOException e) {
+	System.out.println("IOException: " + e);
+	return inputLine;
+	}
+}
+ };
+ class SimpleDotCom{
+	
+int[] locationCells ;
+int numOfHits = 0 ;
+public void setLocationCells(int []locs) {
+locationCells = locs;
+ }
+public String checkYourself(String stringGuess)
+{
+int guess = Integer.parseInt(stringGuess);
+String result = "miss ";
+for (int cell : locationCells)
+			if (guess ==cell) {
+			result = "hit ";
+			numOfHits++;
+			break;
+			//What should we see
+			}
+if (numOfHits ==locationCells.length)
+	{result ="kill";
+	
+	System.out.println(result);
+	return result;
+	}
+};
+//============================================================================
+  class GuessGame{
+	  Player p1 ,p2 ,p3 ;
+	
+	  void startGame() {
+	  p1=new Player();
+	  p2=new Player();
+	  p3=new Player();
+	  
+	  int guessp1 = 0;
+	  int guessp2 = 0;
+	  int guessp3 = 0;
+	  
+	  boolean p1isRight = false;
+	  boolean p2isRight = false;
+	  boolean p3isRight = false;
+	 int  targetNumber = (int)(Math.random()*10) ;
+	 System.out.println("I’m thinking of a number between 0 and 9...");
+	 while(true) {
+		 System.out.println("Number to guess is " + targetNumber);
+		 p1.palyerGuess();
+		 p2.palyerGuess();
+		 p3.palyerGuess();
+		 guessp1 = p1.num;
+		 System.out.println("Player one guessed " + guessp1);
+		 guessp2 = p2.num;
+		 System.out.println("Player two guessed "+ guessp2);
+		 guessp3 = p3.num;
+		 System.out.println("Player three guessed " + guessp3);
+		 
+		 if (guessp1 == targetNumber) {
+			 p1isRight = true;
+			 }
+			 if (guessp2 == targetNumber) {
+			 p2isRight = true;
+			 }
+			 if (guessp3 == targetNumber) {
+			 p3isRight = true;
+			 }
+			 if (p1isRight || p2isRight || p3isRight) {
+				 System.out.println("We have a winner!");
+				 System.out.println("Player one got it right? " + p1isRight);
+				 System.out.println("Player two got it right? " + p2isRight);
+				 System.out.println("Player three got it right? " + p3isRight);
+				 System.out.println("Game is over.");
+				 break; // game over, so break out of the loop
+				 } else {
+				 // we must keep going because nobody got it right!
+				 System.out.println("Players will have to try again.");
+				 } // end if/else
+				 } // end loop
+				 } // end method
+  };//end class
+		 
+	  
+  class Player{
+	  int num =0 ;
+		
+		
+	public  void palyerGuess()
+	  {
+		   num = (int)(Math.random() * 10) ;
+		  System.out.println("The Player Guess = " + num );
+	  }
+	
+	 
+ };
+  
+
+	  
+  
+
+
+
+
+
+
+
+class Dog {
+
+int size;
+String breed;
+String name;
+
+void bark() {
+System.out.println("Ruff! Ruff!");
+
+}
+}

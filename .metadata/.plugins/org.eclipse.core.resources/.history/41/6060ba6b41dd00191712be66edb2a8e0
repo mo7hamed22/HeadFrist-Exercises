@@ -1,0 +1,27 @@
+/**
+
+ * 
+ */
+package teat;
+
+/**
+ * @author mohamed
+ *
+ */
+import java.util.*;
+public class Just_test {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		String str;
+	    str=in.next().toLowerCase();
+	    if((str.length()+1)%2==0)
+	    	System.out.print("CHAT WITH HER!");
+	    else   System.out.print("IGNORE HIM!"); 
+		
+		}
+	}
+	

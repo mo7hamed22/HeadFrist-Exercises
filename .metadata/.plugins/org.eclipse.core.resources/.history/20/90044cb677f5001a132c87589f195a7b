@@ -1,0 +1,61 @@
+package ClasessTest;
+import java.util.*;
+import javax.swing.*;
+import java.io.* ;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class SimpleGui {
+	//JButton labelButton,ColorBtn;
+	JFrame frame ;
+	JLabel label;
+	public static void main(String[] args) {
+		SimpleGui gui =new SimpleGui();
+	     gui.go();
+
+	}
+public void go() {
+	 frame =new JFrame();
+	 
+	 JButton labelButton = new JButton("Change Label");
+	labelButton.addActionListener(new LabelListener());
+	
+	JButton	ColorBtn = new JButton("Change Color");
+	ColorBtn.addActionListener(new ColorlListener());
+	
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
+	MyDrawpanl dr=new MyDrawpanl();
+	
+	frame.getContentPane().add(BorderLayout.SOUTH, ColorBtn);
+	frame.getContentPane().add(BorderLayout.CENTER, dr);
+	frame.getContentPane().add(BorderLayout.EAST, labelButton);
+	frame.getContentPane().add(BorderLayout.WEST, label);
+	
+	frame.setSize(400,400);
+	frame.setVisible(true);
+	
+}	
+		
+	
+
+   class LabelListener implements ActionListener{
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		 label.setText("Ouch ! ! !");;
+	}
+   }
+	class ColorlListener implements ActionListener{
+
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			// TODO Auto-generated method stub
+			 frame.repaint();
+		}
+	}	
+}
+
+

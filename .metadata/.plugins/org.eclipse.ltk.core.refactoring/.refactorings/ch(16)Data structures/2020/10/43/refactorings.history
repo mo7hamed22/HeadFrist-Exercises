@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;Using_Sets&apos; to &apos;DataStrcture/src&apos;&#x0A;- Original project: &apos;ch(16)Data structures&apos;&#x0A;- Destination element: &apos;DataStrcture/src&apos;&#x0A;- Original element: &apos;ch(16)Data structures/src/Using_Sets&apos;" description="Copy package" destination="=DataStrcture/src" element1="/src&lt;Using_Sets" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1603019328022" version="1.0"/>
+</session>

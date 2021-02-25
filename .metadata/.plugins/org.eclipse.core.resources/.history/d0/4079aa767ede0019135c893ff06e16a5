@@ -1,0 +1,33 @@
+/**
+
+ * 
+ */
+package teat;
+
+/**
+ * @author mohamed
+ *
+ */
+import java.util.*;
+public class Just_test {
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner in = new Scanner(System.in);
+		int n ,c=0 ,b=0 ,a ;
+		n =in.nextInt();
+		{	
+			a =in.nextInt();
+			if(a!=b)
+			{
+				c++;				
+			}
+			a=b;
+		}
+		System.out.print(c);
+	    
+		}
+	}
+	

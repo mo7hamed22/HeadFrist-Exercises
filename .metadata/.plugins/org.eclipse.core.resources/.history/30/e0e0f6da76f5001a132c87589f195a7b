@@ -1,0 +1,43 @@
+package ClasessTest;
+import java.util.*;
+import javax.swing.*;
+import java.io.* ;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class SimpleGui implements ActionListener{
+	JButton button;
+	JFrame frame ;
+	public static void main(String[] args) {
+		SimpleGui gui =new SimpleGui();
+	     gui.go();
+
+	}
+public void go() {
+	 frame =new JFrame();
+	 button = new JButton("Click");
+	button.addActionListener(this);
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	
+	MyDrawpanl dr=new MyDrawpanl();
+	frame.getContentPane().add(BorderLayout.SOUTH,button);
+	frame.getContentPane().add(BorderLayout.CENTER,dr);
+	
+	frame.setSize(400,400);
+	button.setSize(2, 2	);;
+	frame.setVisible(true);
+	
+}	
+		
+	
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+		//button.setText("S.O Click  me !");
+		frame.repaint();
+		
+	}
+
+}
